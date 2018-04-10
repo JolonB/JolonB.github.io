@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Courses</title>
+	 <link rel="shortcut icon" type="image/ico" href="connected.ico"/>
+	 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<style>
+body {
+	background-color: #ffe6f3/*#f1fbff*/;
+	font-family: 'Roboto', sans-serif;
+}
+
+table {
+	width: 100%;
+	margin-top: 15px;
+	text-align: center;
+}
+
+table#timetable{
+	max-width: 740px;
+	margin: auto;
+	background-color: rgb(204,204,204);
+	background-color: rgb(204,204,204,0.3);
+}
+
+table#timetable tr th{
+	background-color: white;
+}
+
+td.math2{
+	background-color: #ffcc00;
+}
+
+td.math1{
+	background-color: #3399ff;
+}
+
+td.ecen4{
+	background-color: #cc33ff;
+}
+
+td.ecen3{
+	background-color: #33cc33;
+}
+
+td.tutor{
+	background-color: #996633;
+}
+
+
+
+img {
+	width: 70%;
+	padding: 0 15%;
+	transition: 0.1s;
+}
+
+img:hover {
+	width:90%;
+	padding:0 5%;
+}
+
+a {
+	color: #3a3e3f;
+	text-decoration: none;
+	transition: 0.4s;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #838687;
+}
+
+a.inactive {
+	color: #3a3e3f;
+	text-decoration: none;
+	cursor: default;
+}
+
+form#search {
+	width: 450px;
+	margin: 10px auto 15px auto;
+}
+
+input#q{
+	display: none;
+	width: 100%;
+	height: 20px;
+	box-shadow: 2px 2px 3px 0 #c5c3c3;
+	border: none;
+	border-radius: 2px;
+	transition: 0.4s;
+	padding: 10px;
+	font-family: 'Roboto', sans-serif;
+}
+
+input#q:hover, input#q:focus{
+	box-shadow: 2px 2px 10px 0 #c5c3c3;
+	outline: none;
+}
+
+input#i{
+	display: none;
+	width: 100%;
+	height: 20px;
+	box-shadow: 0 0 0px 3px #ffc230;
+	border: 1px solid #ff9339;
+	border-radius: 3px;
+	transition: 0.1s;
+	padding: 10px;
+	font-family: 'Roboto', sans-serif;
+}
+
+input#i:hover, input#i:focus{
+	outline: none;
+}
+</style>
+
+<script>
+	function load(){
+		if(navigator.onLine){
+			document.getElementById("q").style.display = "block";
+			document.getElementById("i").style.display = "block";
+		}
+	}
+
+	function engr(){
+		if(navigator.onLine){
+			window.location.href = 'https://ecs.victoria.ac.nz/Courses/ENGR291_2018FY/Assignments';
+		}
+		else{
+			window.location.href = 'engr291.html';
+		}
+	}
+</script>
+
+
+<body onload="load()">
+	<table>
+		<tr>
+			<th><a href="https://ecs.victoria.ac.nz/Courses/ECEN203_2018T1/">ECEN203</a></th>
+			<th><a href="https://blackboard.vuw.ac.nz/webapps/blackboard/execute/modulepage/view?course_id=_95489_1&cmp_tab_id=_82758_1&mode=view">ECEN204</a></th>
+			<th><a href="https://ecs.victoria.ac.nz/Courses/ENGR291_2018FY/WebHome">ENGR291</a></th>
+			<th><a href="https://blackboard.vuw.ac.nz/webapps/blackboard/content/listContent.jsp?course_id=_97384_1&content_id=_2203212_1&mode=reset">MATH151</a></th>
+			<th><a href="http://sms.victoria.ac.nz/Courses/MATH244_2018T1/WebHome">MATH244</a></th>
+		</tr>
+		<tr>
+			<td><a href="https://ecs.victoria.ac.nz/Courses/ECEN203_2018T1/Assignments">Assignments</a></td>
+			<td><a href="https://blackboard.vuw.ac.nz/webapps/blackboard/content/listContent.jsp?course_id=_95489_1&content_id=_2225097_1">Assignments</a></td>
+			<td><a href="#" onclick="engr()">Assignments</a></td>
+			<td><a href="http://sms.victoria.ac.nz/Courses/MATH151_2018T1/Assignments">Assignments</a></td>
+			<td><a href="http://sms.victoria.ac.nz/Courses/MATH244_2018T1/Assignments">Assignments</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://www.victoria.ac.nz/courses/ecen/203/2018/offering?crn=18510">Info</a></td>
+			<td><a href="https://www.victoria.ac.nz/courses/ecen/204/2018/offering?crn=28324">Info</a></td>
+			<td><a href="https://www.victoria.ac.nz/courses/engr/291/2018/offering?crn=18717">Info</a></td>
+			<td><a href="https://www.victoria.ac.nz/courses/math/151/2018/offering?crn=17161">Info</a></td>
+			<td><a href="https://www.victoria.ac.nz/courses/math/244/2018/offering?crn=18324">Info</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://ecs.victoria.ac.nz/Courses/ECEN203_2018T1/LectureSchedule">Notes</a></td>
+			<td><a href="https://blackboard.vuw.ac.nz/webapps/blackboard/content/listContent.jsp?course_id=_95489_1&content_id=_2225096_1">Notes</a></td>
+			<td><a href="https://app.summeroftech.co.nz/jobs">SoTech</a> | <a href="https://www.meetup.com/">Meetup</a></td>
+			<td><a href="http://sms.victoria.ac.nz/Courses/MATH151_2018T1/ScansOfNotesFromLectures">Notes</a></td>
+			<td><a href="http://sms.victoria.ac.nz/Courses/MATH244_2018T1/LectureNotes">Notes</a></td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<td><a href="https://blackboard.vuw.ac.nz/webapps/login/">Blackboard</a></td>
+		</tr>
+		<tr>
+			<td><a href="file:///D:/Backup/OneDrive%20-%20Victoria%20University%20of%20Wellington%20-%20STUDENT/University/2018/Trimester%201/">Assignments</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://student-sa.victoria.ac.nz/">MyAllocator</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://ecs.victoria.ac.nz/cgi-bin/studentmarks">Marks</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://my.vuw.ac.nz/cp/home/displaylogin">My Victoria</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://wifiprint.student.vuw.ac.nz/cps/">Wifi Printing</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://library.victoria.ac.nz/library/collections/general-collections/exam-papers">Past Exams</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://github.com/">GitHub</a></td>
+		</tr>
+		<tr><th>Tutoring</th></tr>
+		<tr>
+			<td><a href="https://ecs.victoria.ac.nz/Courses/COMP102_2018T1/TutorSpace">Tutor Space</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://apps.ecs.vuw.ac.nz/cgi-bin/marking?rm=assignments&course=COMP102&year=2018&trimester=1">Assignment Marking</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://ecs.victoria.ac.nz/apps/tutor/">Tutoring Timesheet</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://alescoprod.talent2payroll.com/vuwp-wss/faces/app/WJ0000.jspx">HRKiosk</a></td>
+		</tr>
+	</table>
+	<form action="http://www.google.com/search" method="get" id="search">
+		<input type="text" name="q" id="q" placeholder="Search Google" />
+	</form>
+	<form action="http://www.wolframalpha.com/input/" method="get" id="search">
+		<input type="text" name="i" id="i" placeholder="Search Wolfram|Alpha" />
+	</form>
+	<table id="timetable">
+		<tr>
+			<th></th>
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>
+			<th>Friday</th>
+		</tr>
+		<tr>
+			<th>9:00</th>
+			<td></td>
+			<td></td>
+			<td class="ecen3" rowspan="3">203 Lab<br>LB217</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>10:00</th>
+			<td></td>
+			<td class="tutor">COMP102<br>Tutoring</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>11:00</th>
+			<td></td>
+			<td class="ecen4">ECEN204<br>AMLT105</td>
+			<td class="ecen4">ECEN204<br>MYLT102</td>
+			<td class="ecen4">ECEN204<br>AMLT105</td>
+		</tr>
+		<tr>
+			<th>12:00</th>
+			<td class="math2">MATH244<br>HULT323</td>
+			<td class="ecen3" rowspan="2">ECEN203<br>Helpdesk<br>CO242A</td>
+			<td class="math2">MATH244<br>COLT122</td>
+			<td class="math2">MATH244<br>COLT122</td>
+			<td class="tutor">COMP102<br>Tutoring</td>
+		</tr>
+		<tr>
+			<th>1:10</th>
+			<td></td>
+			<td></td>
+			<td class="tutor">COMP102<br>Tutoring</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>2:10</th>
+			<td class="ecen3">ECEN203<br>HMLT001</td>
+			<td></td>
+			<td class="ecen3">ECEN203<br>MYLT102</td>
+			<td></td>
+			<td class="ecen3">ECEN203<br>HMLT001</td>
+		</tr>
+		<tr>
+			<th>3:10</th>
+			<td class="math2">244 Tut<br>COLT118</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="ecen4" rowspan="3">204 Lab<br>LB217</td>
+		</tr>
+		<tr>
+			<th>4:10</th>
+			<td class="math1">MATH151<br>MCLT110</td>
+			<td class="math1">151 Tut<br>COLT119</td>
+			<td class="math1">MATH151<br>MCLT110</td>
+			<td class="math1">MATH151<br>MCLT110</td>
+		</tr>
+		<tr>
+			<th>5:10</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>  
+
+</body>
+
+</html>
