@@ -20,48 +20,47 @@ table {
 	text-align: center;
 }
 
-table#timetable{
+table.timetable{
 	max-width: 740px;
 	margin: auto;
 	background-color: rgb(204,204,204);
 	background-color: rgb(204,204,204,0.3);
 }
 
-table#timetable tr th{
+table.timetable tr th{
 	background-color: white;
 }
 
-td.math2{
-	background-color: #ffcc00;
+table.timetable tr{
+	height: 38px;
 }
 
-td.math1{
-	background-color: #3399ff;
+div#old{
+	display: none;
 }
 
-td.ecen4{
-	background-color: #cc33ff;
+td.class2{
+	background-color: #ffc107;
 }
 
-td.ecen3{
-	background-color: #33cc33;
+td.class1{
+	background-color: #039be5;
+}
+
+td.class4{
+	background-color: #9c27b0;
+}
+
+td.class3{
+	background-color: #4caf50;
 }
 
 td.tutor{
-	background-color: #996633;
+	background-color: #795548;
 }
 
-
-
-img {
-	width: 70%;
-	padding: 0 15%;
-	transition: 0.1s;
-}
-
-img:hover {
-	width:90%;
-	padding:0 5%;
+td.tutorial{
+	filter: brightness(120%);
 }
 
 a {
@@ -128,11 +127,32 @@ input#s{
 	font-family: 'Roboto', sans-serif;
 }
 
-input#s:focus{box-shadow: 0 0 0 2px #789cd7;
+input#s:focus{
+	box-shadow: 0 0 0 2px #789cd7;
+}
+
+button#oldTT{
+	display: block;
+	height: 34px;
+	width: 100px;
+	margin: auto;
+	outline: 5px solid rgb(204,204,204,0.3);
+	border: none;
+	border-radius: 2px;
+	background-color: white;
+	cursor: pointer;
+}
+
+abbr {
+  border-bottom: none !important;
+  cursor: inherit !important;
+  text-decoration: none !important;
 }
 </style>
 
 <script>
+	timetableShow = false;
+
 	function load(){
 		if(navigator.onLine){
 			document.getElementById("q").style.display = "block";
@@ -149,20 +169,34 @@ input#s:focus{box-shadow: 0 0 0 2px #789cd7;
 			window.location.href = 'engr291.html';
 		}
 	}
+	
+	function showTimetables(){
+		tables = document.getElementById("old");
+		button = document.getElementById("oldTT")
+		if(!timetableShow){
+			tables.style.display = "block";
+			button.innerText="Hide Old Timetables";
+			}
+		else{
+			tables.style.display = "none";
+			button.innerText="Show Old Timetables";
+		}
+		timetableShow = !timetableShow;
+	}
 </script>
 
 
 <body onload="load()">
 	<table>
 		<tr>
-			<th><a href="https://ecs.victoria.ac.nz/Courses/ECEN203_2018T1/">ECEN203</a></th>
-			<th><a href="https://blackboard.vuw.ac.nz/webapps/blackboard/execute/modulepage/view?course_id=_95489_1&cmp_tab_id=_82758_1&mode=view">ECEN204</a></th>
+			<th><a href="https://ecs.victoria.ac.nz/Courses/COMP261_2018T2/">COMP261</a></th>
+			<th><a href="https://ecs.victoria.ac.nz/Courses/ECEN202_2018T2/">ECEN202</a></th>
 			<th><a href="https://ecs.victoria.ac.nz/Courses/ENGR291_2018FY/WebHome">ENGR291</a></th>
-			<th><a href="http://sms.victoria.ac.nz/Courses/MATH151_2018T1/WebHome">MATH151</a></th>
-			<th><a href="http://sms.victoria.ac.nz/Courses/MATH244_2018T1/WebHome">MATH244</a></th>
+			<th><a class="inactive" href="http://sms.victoria.ac.nz/Courses/ECEN220_2018T2/WebHome">ECEN220</a></th>
+			<th><a class="inactive" href="https://ecs.victoria.ac.nz/Courses/ENGR201_2018T2/">ENGR201</a></th>
 		</tr>
 		<tr>
-			<td><a href="https://ecs.victoria.ac.nz/Courses/ECEN203_2018T1/Assignments">Assignments</a></td>
+			<td><a href="https://ecs.victoria.ac.nz/Courses/COMP261_2018T2/Assignments">Assignments</a></td>
 			<td><a href="https://ecs.victoria.ac.nz/Courses/ECEN204_2018T1/Assignments">Assignments</a></td>
 			<td><a href="#" onclick="engr()">Assignments</a></td>
 			<td><a href="http://sms.victoria.ac.nz/Courses/MATH151_2018T1/Assignments">Assignments</a></td>
@@ -231,7 +265,7 @@ input#s:focus{box-shadow: 0 0 0 2px #789cd7;
 	<form action="https://en.wikipedia.org/w/index.php" method="get" id="search">
 		<input type="text" name="search" id="s" placeholder="Search Wikipedia" />
 	</form>
-	<table id="timetable">
+	<table class="timetable">
 		<tr>
 			<th></th>
 			<th>Monday</th>
@@ -244,70 +278,161 @@ input#s:focus{box-shadow: 0 0 0 2px #789cd7;
 			<th>9:00</th>
 			<td></td>
 			<td></td>
-			<td class="ecen3" rowspan="3">203 Lab<br>LB217</td>
+			<td></td>
 			<td></td>
 			<td></td>
 		</tr>
 		<tr>
 			<th>10:00</th>
+			<td class="class3">COMP261<br>HMLT205</td>
 			<td></td>
-			<td class="tutor">COMP102<br>Tutoring</td>
 			<td></td>
 			<td></td>
 		</tr>
 		<tr>
 			<th>11:00</th>
 			<td></td>
-			<td class="ecen4">ECEN204<br>AMLT105</td>
-			<td class="ecen4">ECEN204<br>MYLT102</td>
-			<td class="ecen4">ECEN204<br>AMLT105</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
 		</tr>
 		<tr>
 			<th>12:00</th>
-			<td class="math2">MATH244<br>HULT323</td>
-			<td class="ecen3" rowspan="2">ECEN203<br>Helpdesk<br>CO242A</td>
-			<td class="math2">MATH244<br>COLT122</td>
-			<td class="math2">MATH244<br>COLT122</td>
-			<td class="tutor">COMP102<br>Tutoring</td>
+			<td class="class2">ECEN202<br>MYLT102</td>
+			<td class="class3">COMP261<br>MCLT101</td>
+			<td class="class2">ECEN202<br>MYLT102</td>
+			<td class="class3">COMP261<br>MCLT101</td>
+			<td class="class2">ECEN202<br>MYLT102</td>
 		</tr>
 		<tr>
 			<th>1:10</th>
 			<td></td>
+			<td class="class4">ENGR201<br>COLT122</td>
 			<td></td>
-			<td class="tutor">COMP102<br>Tutoring</td>
+			<td></td>
 			<td></td>
 		</tr>
 		<tr>
 			<th>2:10</th>
-			<td class="ecen3">ECEN203<br>HMLT001</td>
+			<td class="class3 tutorial"><abbr title="Any day, on weeks when assignments are due">261 Help<br>CO242b</abbr></td>
 			<td></td>
-			<td class="ecen3">ECEN203<br>MYLT102</td>
 			<td></td>
-			<td class="ecen3">ECEN203<br>AMLT105</td>
+			<td></td>
+			<td></td>
 		</tr>
 		<tr>
 			<th>3:10</th>
-			<td class="math2">244 Tut<br>COLT118</td>
+			<td class="class3 tutorial"><abbr title="Any day">261 Help<br>CO242b</abbr></td>
 			<td></td>
 			<td></td>
 			<td></td>
-			<td class="ecen4" rowspan="3">204 Lab<br>LB217</td>
+			<td></td>
 		</tr>
 		<tr>
 			<th>4:10</th>
-			<td class="math1">MATH151<br>MCLT110</td>
-			<td class="math1">151 Tut<br>COLT119</td>
-			<td class="math1">MATH151<br>MCLT110</td>
-			<td class="math1">MATH151<br>MCLT110</td>
+			<td></td>
+			<td class="class1">ECEN220<br>AMLT105</td>		
+			<td class="class1">ECEN220<br>AMLT105</td>		
+			<td class="class1">ECEN220<br>AMLT105</td>		
+			<td class="class1">ECEN220<br>AMLT105</td>		
 		</tr>
 		<tr>
 			<th>5:10</th>
 			<td></td>
 			<td></td>
 			<td></td>
+			<td class="class3 tutorial">261 TUT<br>CO118</td>
 			<td></td>
 		</tr>
-	</table>  
+	</table> 
+	
+	
+	<br>
+	<button onclick="showTimetables()" id="oldTT">Show Old Timetables</button>
+	<br>
+	
+	
+	<!--### OLD TIMETABLES ###-->
+	<div id="old">
+		<table class="timetable">
+			<tr>
+				<th></th>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>
+			</tr>
+			<tr>
+				<th>9:00</th>
+				<td></td>
+				<td></td>
+				<td class="class3 tutorial" rowspan="3">203 Lab<br>CO239</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>10:00</th>
+				<td></td>
+				<td class="tutor">COMP102<br>Tutoring</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>11:00</th>
+				<td></td>
+				<td class="class4">ECEN204<br>AMLT105</td>
+				<td class="class4">ECEN204<br>MYLT102</td>
+				<td class="class4">ECEN204<br>AMLT105</td>
+			</tr>
+			<tr>
+				<th>12:00</th>
+				<td class="class2">MATH244<br>HULT323</td>
+				<td class="class3 tutorial" rowspan="2">ECEN203<br>Helpdesk<br>CO242A</td>
+				<td class="class2">MATH244<br>COLT122</td>
+				<td class="class2">MATH244<br>COLT122</td>
+				<td class="tutor">COMP102<br>Tutoring</td>
+			</tr>
+			<tr>
+				<th>1:10</th>
+				<td></td>
+				<td></td>
+				<td class="tutor">COMP102<br>Tutoring</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>2:10</th>
+				<td class="class3">ECEN203<br>HMLT001</td>
+				<td></td>
+				<td class="class3">ECEN203<br>MYLT102</td>
+				<td></td>
+				<td class="class3">ECEN203<br>AMLT105</td>
+			</tr>
+			<tr>
+				<th>3:10</th>
+				<td class="class2 tutorial">244 Tut<br>CO118</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="class4 tutorial" rowspan="3">204 Lab<br>LB217</td>
+			</tr>
+			<tr>
+				<th>4:10</th>
+				<td class="class1">MATH151<br>MCLT110</td>
+				<td class="class1 tutorial">151 Tut<br>CO119</td>
+				<td class="class1">MATH151<br>MCLT110</td>
+				<td class="class1">MATH151<br>MCLT110</td>
+			</tr>
+			<tr>
+				<th>5:10</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>  
+	</div>
 
 </body>
 
