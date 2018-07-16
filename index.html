@@ -154,13 +154,13 @@ abbr {
 	timetableShow = false;
 
 	function load(){
-		if(window.location.href==="https://jolonb.github.io/"){
-			document.getElementById("oldTT").style.display = "none";
-		}
 		if(navigator.onLine){
 			document.getElementById("q").style.display = "block";
 			document.getElementById("i").style.display = "block";
 			document.getElementById("s").style.display = "block";
+		}
+		if(window.location.href==="https://jolonb.github.io"){
+			document.getElementById("oldTT").style.display = "none";
 		}
 	}
 
