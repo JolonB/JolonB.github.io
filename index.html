@@ -152,17 +152,17 @@ abbr {
 
 <script>
 	timetableShow = false;
-//if(window.location.href==="https://jolonb.github.io"){
-			document.getElementById("online").style.display = "none";
-		//}
 
-	function load(){	
+	function load(){
 		if(navigator.onLine){
 			document.getElementById("q").style.display = "block";
 			document.getElementById("i").style.display = "block";
 			document.getElementById("s").style.display = "block";
 		}
-		
+		if(window.location.href==="https://jolonb.github.io"){
+			document.getElementById("online").style.display = "none";
+			alert("wait");
+		}
 	}
 
 	function engr(){
