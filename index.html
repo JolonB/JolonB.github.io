@@ -154,15 +154,15 @@ abbr {
 	timetableShow = false;
 
 	function load(){
+		//if(window.location.href==="https://jolonb.github.io"){
+			document.getElementById("online").style.display = "none";
+		//}	
 		if(navigator.onLine){
 			document.getElementById("q").style.display = "block";
 			document.getElementById("i").style.display = "block";
 			document.getElementById("s").style.display = "block";
 		}
-		//if(window.location.href==="https://jolonb.github.io"){
-
-			document.getElementById("online").style.display = "none";
-		//}
+		
 	}
 
 	function engr(){
@@ -193,7 +193,7 @@ abbr {
 <body onload="load()">
 	<table>
 		<tr>
-			<th><a href="https://ecs.victoria.ac.nz/Courses/HELLO261_2018T2/">COMP261</a></th>
+			<th><a href="https://ecs.victoria.ac.nz/Courses/COMP261_2018T2/">COMP261</a></th>
 			<th><a href="https://ecs.victoria.ac.nz/Courses/ECEN202_2018T2/">ECEN202</a></th>
 			<th><a href="https://ecs.victoria.ac.nz/Courses/ENGR291_2018FY/">ENGR291</a></th>
 			<th><a class="inactive" href="http://sms.victoria.ac.nz/Courses/ECEN220_2018T2/">ECEN220</a></th>
