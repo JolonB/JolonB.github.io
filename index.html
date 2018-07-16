@@ -159,6 +159,9 @@ abbr {
 			document.getElementById("i").style.display = "block";
 			document.getElementById("s").style.display = "block";
 		}
+		if(window.location.href==="https://jolonb.github.io/"){
+			document.getElementById("online").style.display = "none";
+		}
 	}
 
 	function engr(){
@@ -191,38 +194,38 @@ abbr {
 		<tr>
 			<th><a href="https://ecs.victoria.ac.nz/Courses/COMP261_2018T2/">COMP261</a></th>
 			<th><a href="https://ecs.victoria.ac.nz/Courses/ECEN202_2018T2/">ECEN202</a></th>
-			<th><a href="https://ecs.victoria.ac.nz/Courses/ENGR291_2018FY/WebHome">ENGR291</a></th>
-			<th><a class="inactive" href="http://sms.victoria.ac.nz/Courses/ECEN220_2018T2/WebHome">ECEN220</a></th>
+			<th><a href="https://ecs.victoria.ac.nz/Courses/ENGR291_2018FY/">ENGR291</a></th>
+			<th><a class="inactive" href="http://sms.victoria.ac.nz/Courses/ECEN220_2018T2/">ECEN220</a></th>
 			<th><a class="inactive" href="https://ecs.victoria.ac.nz/Courses/ENGR201_2018T2/">ENGR201</a></th>
 		</tr>
 		<tr>
 			<td><a href="https://ecs.victoria.ac.nz/Courses/COMP261_2018T2/Assignments">Assignments</a></td>
-			<td><a href="https://ecs.victoria.ac.nz/Courses/ECEN204_2018T1/Assignments">Assignments</a></td>
+			<td><a href="https://ecs.victoria.ac.nz/Courses/ECEN202_2018T2/Assignments">Assignments</a></td>
 			<td><a href="#" onclick="engr()">Assignments</a></td>
-			<td><a href="http://sms.victoria.ac.nz/Courses/MATH151_2018T1/Assignments">Assignments</a></td>
-			<td><a href="http://sms.victoria.ac.nz/Courses/MATH244_2018T1/Assignments">Assignments</a></td>
+			<td><a class="inactive" href="#">Assignments</a></td>
+			<td><a class="inactive" href="#">Assignments</a></td>
 		</tr>
 		<tr>
-			<td><a href="https://www.victoria.ac.nz/courses/ecen/203/2018/offering?crn=18510">Info</a></td>
-			<td><a href="https://www.victoria.ac.nz/courses/ecen/204/2018/offering?crn=28324">Info</a></td>
-			<td><a href="https://www.victoria.ac.nz/courses/engr/291/2018/offering?crn=18717">Info</a></td>
-			<td><a href="https://www.victoria.ac.nz/courses/math/151/2018/offering?crn=17161">Info</a></td>
-			<td><a href="https://www.victoria.ac.nz/courses/math/244/2018/offering?crn=18324">Info</a></td>
+			<td><a href="https://www.victoria.ac.nz/courses/comp/261/2018/">Info</a></td>
+			<td><a href="https://www.victoria.ac.nz/courses/ecen/202/2018/">Info</a></td>
+			<td><a href="https://www.victoria.ac.nz/courses/engr/291/2018/">Info</a></td>
+			<td><a href="https://www.victoria.ac.nz/courses/ecen/220/2018/">Info</a></td>
+			<td><a href="https://www.victoria.ac.nz/courses/engr/201/2018/">Info</a></td>
 		</tr>
 		<tr>
 			<td><a href="https://ecs.victoria.ac.nz/Courses/ECEN203_2018T1/LectureSchedule">Notes</a></td>
-			<td><a href="https://ecs.victoria.ac.nz/Courses/ECEN204_2018T1/LectureSchedule">Notes</a></td>
+			<td><a href="https://ecs.victoria.ac.nz/Courses/ECEN202_2018T2/LectureSchedule">Notes</a></td>
 			<td><a href="https://app.summeroftech.co.nz/jobs">SoTech</a> | <a href="https://www.meetup.com/">Meetup</a></td>
-			<td><a href="http://sms.victoria.ac.nz/Courses/MATH151_2018T1/ScansOfNotesFromLectures">Notes</a></td>
-			<td><a href="http://sms.victoria.ac.nz/Courses/MATH244_2018T1/LectureNotes">Notes</a></td>
+			<td><a class="inactive" href="#">Notes</a></td>
+			<td><a class="inactive" href="#">Notes</a></td>
 		</tr>
 	</table>
 	<table>
 		<tr>
 			<td><a href="https://blackboard.vuw.ac.nz/webapps/login/">Blackboard</a></td>
 		</tr>
-		<tr>
-			<td><a href="file:///D:/Backup/OneDrive%20-%20Victoria%20University%20of%20Wellington%20-%20STUDENT/University/2018/Trimester%201/">Assignments</a></td>
+		<tr id="online">
+			<td><a href="file:///D:/Backup/OneDrive%20-%20Victoria%20University%20of%20Wellington%20-%20STUDENT/University/2018/Trimester%202/">Assignments</a></td>
 		</tr>
 		<tr>
 			<td><a href="https://student-sa.victoria.ac.nz/">MyAllocator</a></td>
@@ -355,6 +358,7 @@ abbr {
 	
 	<!--### OLD TIMETABLES ###-->
 	<div id="old">
+		<!--### Tri 1 2018 ###-->
 		<table class="timetable">
 			<tr>
 				<th></th>
