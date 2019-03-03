@@ -4,14 +4,19 @@
 
 <head>
 	<title>Courses</title>
-	 <link rel="shortcut icon" type="image/ico" href="connected.ico"/>
-	 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="shortcut icon" type="image/ico" href="connected.ico"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <style>
 body {
 	background-color: #ffe6f3/*#f1fbff*/;
 	font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+	text-align: center;
+	margin: 10px;
 }
 
 table {
@@ -27,7 +32,7 @@ table.timetable{
 	background-color: rgb(204,204,204,0.3);
 }
 
-table.timetable tr th{
+table.timetable th{
 	background-color: white;
 }
 
@@ -39,20 +44,20 @@ div#old{
 	display: none;
 }
 
-td.class2{
-	background-color: #ffc107;
-}
-
 td.class1{
-	background-color: #039be5;
+	background-color: #039be5; /* Blue */
 }
 
-td.class4{
-	background-color: #9c27b0;
+td.class2{
+	background-color: #ffc107; /* Yellow */
 }
 
 td.class3{
-	background-color: #4caf50;
+	background-color: #4caf50; /* Green */
+}
+
+td.class4{
+	background-color: #9c27b0; /* Purple */
 }
 
 td.tutor{
@@ -192,32 +197,32 @@ abbr {
 <body onload="load()">
 	<table>
 		<tr>
-			<th><a href="https://ecs.victoria.ac.nz/Courses/COMP261_2018T2/">COMP261</a></th>
-			<th><a href="https://ecs.victoria.ac.nz/Courses/ECEN202_2018T2/">ECEN202</a></th>
-			<th><a href="https://ecs.victoria.ac.nz/Courses/ENGR291_2018FY/">ENGR291</a></th>
-			<th><a href="http://ecs.victoria.ac.nz/Courses/ECEN220_2018T2/">ECEN220</a></th>
-			<th><a href="https://blackboard.vuw.ac.nz/webapps/blackboard/execute/modulepage/view?course_id=_95826_1&cmp_tab_id=_83095_1&mode=view">ENGR201</a></th>
+			<th><a class="" href="https://ecs.victoria.ac.nz/Courses/ECEN315_2019T1/">ECEN315</a></th>
+			<th><a class="" href="https://ecs.victoria.ac.nz/Courses/ECEN321_2019T1/">ECEN321</a></th>
+			<th><a class="inactive" href="https://ecs.victoria.ac.nz/Courses/ENGR391_2019FY/">ENGR291</a></th>
+			<th><a class="" href="https://ecs.victoria.ac.nz/Courses/ENGR301_2019T1/">ENGR301</a></th>
+			<th><a class="inactive" href="https://ecs.victoria.ac.nz/Courses/NWEN241_2019T1/">NWEN241</a></th>
 		</tr>
 		<tr>
-			<td><a href="https://ecs.victoria.ac.nz/Courses/COMP261_2018T2/Assignments">Assignments</a></td>
-			<td><a href="https://ecs.victoria.ac.nz/Courses/ECEN202_2018T2/Assignments">Assignments</a></td>
-			<td><a href="#" onclick="engr()">Assignments</a></td>
-			<td><a href="http://ecs.victoria.ac.nz/Courses/ECEN220_2018T2/Assignments">Assignments</a></td>
-			<td><a href="https://blackboard.vuw.ac.nz/webapps/blackboard/content/listContent.jsp?course_id=_95826_1&content_id=_2320772_1&mode=reset">Assignments</a></td>
+			<td><a class="" href="https://ecs.victoria.ac.nz/Courses/ECEN315_2019T1/Assignments">Assignments</a></td>
+			<td><a class="" href="https://ecs.victoria.ac.nz/Courses/ECEN321_2019T1/Assignments">Assignments</a></td>
+			<td><a class="inactive" href="#" onclick="engr()">Assignments</a></td>
+			<td><a class="" href="https://ecs.victoria.ac.nz/Courses/ENGR301_2019T1/Assessments">Assignments</a></td>
+			<td><a class="inactive" href="https://blackboard.vuw.ac.nz/webapps/blackboard/content/listContent.jsp?course_id=_95826_1&content_id=_2320772_1&mode=reset">Assignments</a></td>
 		</tr>
 		<tr>
-			<td><a href="https://www.victoria.ac.nz/courses/comp/261/">Info</a></td>
-			<td><a href="https://www.victoria.ac.nz/courses/ecen/202/">Info</a></td>
-			<td><a href="https://www.victoria.ac.nz/courses/engr/291/">Info</a></td>
-			<td><a href="https://www.victoria.ac.nz/courses/ecen/220/">Info</a></td>
-			<td><a href="https://www.victoria.ac.nz/courses/engr/201/">Info</a></td>
+			<td><a class="" href="https://www.victoria.ac.nz/courses/ecen/315/">Info</a></td>
+			<td><a class="" href="https://www.victoria.ac.nz/courses/ecen/321/">Info</a></td>
+			<td><a class="" href="https://www.victoria.ac.nz/courses/engr/391/">Info</a></td>
+			<td><a class="" href="https://www.victoria.ac.nz/courses/engr/301/">Info</a></td>
+			<td><a class="" href="https://www.victoria.ac.nz/courses/nwen/241/">Info</a></td>
 		</tr>
 		<tr>
-			<td><a href="https://ecs.victoria.ac.nz/Courses/COMP261_2018T2/LectureSchedule">Notes</a></td>
-			<td><a href="https://ecs.victoria.ac.nz/Courses/ECEN202_2018T2/LectureSchedule">Notes</a></td>
+			<td><a class="" href="https://ecs.victoria.ac.nz/Courses/ECEN315_2019T1/LectureSchedule">Notes</a></td>
+			<td><a class="" href="https://ecs.victoria.ac.nz/Courses/ECEN321_2019T1/LectureSchedule">Notes</a></td>
 			<td><a href="https://app.summeroftech.co.nz/jobs">SoTech</a> | <a href="https://www.meetup.com/">Meetup</a></td>
-			<td><a href="http://ecs.victoria.ac.nz/Courses/ECEN220_2018T2/LectureSchedule">Notes</a></td>
-			<td><a href="https://blackboard.vuw.ac.nz/webapps/blackboard/content/listContent.jsp?course_id=_95826_1&content_id=_2314930_1&mode=reset">Notes</a></td>
+			<td><a class="" href="https://ecs.victoria.ac.nz/Courses/ENGR301_2019T1/LectureSchedule">Notes</a></td>
+			<td><a class="inactive" href="https://blackboard.vuw.ac.nz/webapps/blackboard/content/listContent.jsp?course_id=_95826_1&content_id=_2314930_1&mode=reset">Notes</a></td>
 		</tr>
 	</table>
 	<table>
@@ -225,16 +230,16 @@ abbr {
 			<td><a href="https://blackboard.vuw.ac.nz/webapps/login/">Blackboard</a></td>
 		</tr>
 		<tr id="online">
-			<td><a href="file:///D:/Backup/OneDrive%20-%20Victoria%20University%20of%20Wellington%20-%20STUDENT/University/2018/Trimester%202/">Assignments</a></td>
+			<td><a href="file:///D:/Backup/OneDrive%20-%20Victoria%20University%20of%20Wellington%20-%20STUDENT/University/2019/Trimester%201/">Assignments</a></td>
 		</tr>
 		<tr>
-			<td><a href="https://student-sa.victoria.ac.nz/">MyAllocator</a></td>
+			<td><a href="http://student-sa-odd.victoria.ac.nz/">MyAllocator</a></td>
 		</tr>
 		<tr>
-			<td><a href="https://ecs.victoria.ac.nz/cgi-bin/studentmarks">Marks</a></td>
+			<td><a href="https://apps.ecs.vuw.ac.nz/cgi-bin/studentmarks">Marks</a></td>
 		</tr>
 		<tr>
-			<td><a href="https://my.vuw.ac.nz/cp/home/displaylogin">My Victoria</a></td>
+			<td><a href="https://www.victoria.ac.nz/students/tools">MyTools</a></td>
 		</tr>
 		<tr>
 			<td><a href="https://wifiprint.student.vuw.ac.nz/cps/">Wifi Printing</a></td>
@@ -245,7 +250,9 @@ abbr {
 		<tr>
 			<td><a href="https://github.com/">GitHub</a></td>
 		</tr>
-		<tr><th>Tutoring</th></tr>
+		<tr>
+			<th>Tutoring</th>
+		</tr>
 		<tr>
 			<td><a class="inactive" href="https://ecs.victoria.ac.nz/Courses/COMP102_2018T1/TutorSpace">Tutor Space</a></td>
 		</tr>
@@ -258,7 +265,9 @@ abbr {
 		<tr>
 			<td><a class="inactive" href="https://alescoprod.talent2payroll.com/vuwp-wss/faces/app/WJ0000.jspx">HRKiosk</a></td>
 		</tr>
-		<tr><th>Jobs</th></tr>
+		<tr>
+			<th>Jobs</th>
+		</tr>
 		<tr>
 			<td><a href="https://app.summeroftech.co.nz/jobs">Summer of Tech</a></td>
 		</tr>
@@ -295,15 +304,16 @@ abbr {
 		</tr>
 		<tr>
 			<th>9:00</th>
+			<td class="class3">NWEN241<br>MCLT101</td>
 			<td></td>
+			<td class="class3">NWEN241<br>MCLT101</td>
 			<td></td>
-			<td></td>
-			<td class="class1 tutorial" rowspan="3">ECEN220<br>Lab<br>CO239</td>
-			<td></td>
+			<td class="class3">NWEN241<br>SUMT228</td>
 		</tr>
 		<tr>
 			<th>10:00</th>
-			<td class="class3">COMP261<br>HMLT205</td>
+			<td></td>
+			<td></td>
 			<td></td>
 			<td></td>
 			<td></td>
@@ -311,37 +321,38 @@ abbr {
 		<tr>
 			<th>11:00</th>
 			<td></td>
+			<td class="class2">ECEN321<br>MYLT102</td>
 			<td></td>
-			<td></td>
-			<td></td>
+			<td class="class2">ECEN321<br>MYLT102</td>
+			<td class="class2">ECEN321<br>MYLT102</td>
 		</tr>
 		<tr>
 			<th>12:00</th>
-			<td class="class2">ECEN202<br>MYLT102</td>
-			<td class="class3">COMP261<br>MCLT101</td>
-			<td class="class2">ECEN202<br>MYLT102</td>
-			<td class="class3">COMP261<br>MCLT101</td>
-			<td class="class2">ECEN202<br>MYLT102</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
 		</tr>
 		<tr>
 			<th>1:10</th>
+			<td class="class1">ECEN315<br>CO119</td>
 			<td></td>
-			<td class="class4">ENGR201<br>COLT122</td>
-			<td></td>
-			<td></td>
+			<td class="class1">ECEN315<br>CO119</td>
+			<td class="class1">ECEN315<br>CO119</td>
 			<td></td>
 		</tr>
 		<tr>
 			<th>2:10</th>
-			<td class="class3 tutorial"><abbr title="Any day, on weeks when assignments are due">261 Help<br>CO242b</abbr></td>
-			<td class="class2 tutorial" rowspan="2">ECEN202<br>Lab<br>LB217</td>
 			<td></td>
 			<td></td>
-			<td class="class4 tutorial" rowspan="2">ENGR201<br>Workshop<br>FT83</td>
+			<td></td>
+			<td></td>
+			<td></td>
 		</tr>
 		<tr>
 			<th>3:10</th>
-			<td class="class3 tutorial"><abbr title="Any day">261 Help<br>CO242b</abbr></td>
+			<td></td>
 			<td></td>
 			<td></td>
 			<td></td>
@@ -349,18 +360,18 @@ abbr {
 		</tr>
 		<tr>
 			<th>4:10</th>
-			<td></td>
-			<td class="class1">ECEN220<br>AMLT105</td>		
-			<td class="class1">ECEN220<br>AMLT105</td>		
-			<td class="class1">ECEN220<br>AMLT105</td>		
-			<td class="class1">ECEN220<br>AMLT105</td>		
+			<td></td>	
+			<td></td>	
+			<td></td>	
+			<td></td>	
+			<td></td>	
 		</tr>
 		<tr>
 			<th>5:10</th>
+			<td class="class4">ENGR301<br>TTRLT1</td>
+			<td class="class4">ENGR301<br>TTRLT1</td>
 			<td></td>
-			<td></td>
-			<td></td>
-			<td class="class3 tutorial">261 TUT<br>CO118</td>
+			<td class="class4">ENGR301<br>TTRLT1</td>
 			<td></td>
 		</tr>
 	</table> 
@@ -374,6 +385,7 @@ abbr {
 	<!--### OLD TIMETABLES ###-->
 	<div id="old">
 		<!--### Tri 1 2018 ###-->
+		<h3>2018</h3>
 		<table class="timetable">
 			<tr>
 				<th></th>
@@ -451,6 +463,85 @@ abbr {
 				<td></td>
 			</tr>
 		</table>  
+		<br>
+		<table class="timetable">
+		<tr>
+			<th></th>
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>
+			<th>Friday</th>
+		</tr>
+		<tr>
+			<th>9:00</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="class1 tutorial" rowspan="3">ECEN220<br>Lab<br>CO239</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>10:00</th>
+			<td class="class3">COMP261<br>HMLT205</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>11:00</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>12:00</th>
+			<td class="class2">ECEN202<br>MYLT102</td>
+			<td class="class3">COMP261<br>MCLT101</td>
+			<td class="class2">ECEN202<br>MYLT102</td>
+			<td class="class3">COMP261<br>MCLT101</td>
+			<td class="class2">ECEN202<br>MYLT102</td>
+		</tr>
+		<tr>
+			<th>1:10</th>
+			<td></td>
+			<td class="class4">ENGR201<br>COLT122</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>2:10</th>
+			<td class="class3 tutorial"><abbr title="Any day, on weeks when assignments are due">261 Help<br>CO242b</abbr></td>
+			<td class="class2 tutorial" rowspan="2">ECEN202<br>Lab<br>LB217</td>
+			<td></td>
+			<td></td>
+			<td class="class4 tutorial" rowspan="2">ENGR201<br>Workshop<br>FT83</td>
+		</tr>
+		<tr>
+			<th>3:10</th>
+			<td class="class3 tutorial"><abbr title="Any day">261 Help<br>CO242b</abbr></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>4:10</th>
+			<td></td>
+			<td class="class1">ECEN220<br>AMLT105</td>		
+			<td class="class1">ECEN220<br>AMLT105</td>		
+			<td class="class1">ECEN220<br>AMLT105</td>		
+			<td class="class1">ECEN220<br>AMLT105</td>		
+		</tr>
+		<tr>
+			<th>5:10</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="class3 tutorial">261 TUT<br>CO118</td>
+			<td></td>
+		</tr>
+	</table> 
 	</div>
 
 </body>
