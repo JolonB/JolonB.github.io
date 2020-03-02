@@ -170,6 +170,11 @@
     .leaf {
         /* Disclaimer: this is a joke */
         font-family: leaf;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    
+    .offline {
         display: none;
     }
 </style>
@@ -182,14 +187,14 @@
             document.getElementById("q").style.display = "block";
             document.getElementById("i").style.display = "block";
             document.getElementById("s").style.display = "block";
-        } else {
-            var leaves = document.getElementsByClassName("leaf");
-            for (var i = 0; i < leaves.length; i++) {
-                leaves[i].style.display = "inline";
-            }
         }
         if (window.location.href === "https://jolonb.github.io/") {
             document.getElementById("online").style.display = "none";
+        } else {
+            var leaves = document.getElementsByClassName("offline");
+            for (var i = 0; i < leaves.length; i++) {
+                leaves[i].style.display = "inline";
+            }
         }
     }
 
@@ -219,7 +224,7 @@
 <body onload="load()">
     <table>
         <tr>
-            <th><span class="leaf">j </span><a class="" href="https://ecs.wgtn.ac.nz/Courses/COMP307_2020T1/">COMP420</a><span class="leaf"> j</span>
+            <th><span class="leaf offline">j </span><a class="" href="https://ecs.wgtn.ac.nz/Courses/COMP307_2020T1/">COMP420</a><span class="leaf offline"> j</span>
             </th>
             <th><a class="inactive" href="https://ecs.wgtn.ac.nz/Courses/ECEN430_2020T1/">ECEN430</a></th>
             <th><a class="" href="https://ecs.wgtn.ac.nz/Courses/ENGR401_2020T1/">ENGR401</a></th>
@@ -360,7 +365,7 @@
         </tr>
         <tr>
             <th>2:10</th>
-            <td></td>
+            <td class="class1 tutorial" rowspan="2">ECEN430<br>Lab<br>???</td>
             <td class="class2">COMP420<br>TTRLT1</td>
             <td></td>
             <td class="class2">COMP420<br>TTRLT1</td>
@@ -368,7 +373,7 @@
         </tr>
         <tr>
             <th>3:10</th>
-            <td></td>
+            <!-- <td></td> -->
             <td></td>
             <td></td>
             <td></td>
