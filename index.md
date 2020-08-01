@@ -3,6 +3,13 @@ layout: home
 author_profile: true
 ---
 
+<style>
+.fab {
+    /* This is not a good way of doing this */
+    color: #eaeaec!important
+}
+</style>
+
 # test
 
 ## another test
