@@ -55,7 +55,7 @@ analytics:
 author:
   name             : "Jolon Behrent"
   avatar           : "https://www.github.com/jolonb.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Test bio"
+  bio              : "Soon-to-be electronics engineering graduate"
   location         : "Wellington, NZ"
   links:
     - label: "Email"
@@ -104,6 +104,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
+    - label: "Courses"
+      icon: "fas fa-fw fa-link"
+      url: "/courses"
 
 
 # Reading Files
