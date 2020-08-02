@@ -3,16 +3,22 @@ author_profile: true
 ---
 
 <style>
-.fab {
+.fa-fw {
     /* This is not a good way of doing this */
     color: #eaeaec!important
 }
 </style>
 
-# test
+# Jolon Behrent
 
-## another test
+## Projects
 
-this is another test, wow!
+## Experience
 
-Are you looking for the course links? [Click here](courses/)
+## Skills
+
+## Education
+
+## Resume
+
+You can find my resume [here](files/jolonbehrent.pdf). I'll do my best to keep it up to date.
