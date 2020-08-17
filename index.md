@@ -31,7 +31,19 @@ Under construction <i class="fas fa-fw fa-hammer"></i>
 
 ## Education
 
-Under construction <i class="fas fa-fw fa-toolbox"></i>
+### University
+
+*Victoria University of Wellington*  
+Bachelor of Engineering (Hons)  
+Electronic and Computer Systems Engineering  
+2017 - present  
+Average grade: A
+
+### College
+
+*Saint Patrick's College*  
+Silverstream  
+2012 - 2016
 
 ## Resume
 
