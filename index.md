@@ -18,6 +18,10 @@ h3 {
     margin: 1em 0 0.5em 0;
 }
 
+.card h3 {
+  margin-top: 0;
+}
+
 p {
   margin: 0 0 0.5em 0!important;
 }
@@ -26,12 +30,6 @@ ul {
   margin: 0;
 }
 
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 50%;
-  padding: 0 10px;
-}
 
 /* Remove extra left and right margins, due to padding */
 .row {margin: 0 -5px;}
@@ -43,18 +41,21 @@ ul {
   clear: both;
 }
 
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
+.floatleft {
+  float: left;
 }
 
+.floatright {
+  float: right;
+  margin-top: 5px; /* this is a little hacky, but is anything on this page not hacky? */
+}
+
+/* Float 3 columns side by side */
 .col3 {
-  width: 33%;
-  margin: auto;
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+  margin: 10px 1.5% 0 1.5%!important;
 }
 
 .card {
@@ -169,9 +170,26 @@ Languages Used:
 
 ## Skills
 
-Under construction <i class="fas fa-fw fa-hammer"></i>
-
-<!-- <i class="fab fa-python"></i> -->
+<div class="row">
+<div class="card col3"><span class="floatleft">Python</span><i class="fab fa-python floatright"></i></div>
+<div class="card col3"><span class="floatleft">C/C++</span></div>
+<div class="card col3"><span class="floatleft">Java</span><i class="fab fa-java floatright"></i></div>
+</div>
+<div class="row">
+<div class="card col3"><span class="floatleft">MATLAB</span></div>
+<div class="card col3"><span class="floatleft">Agile</span></div>
+<div class="card col3"><span class="floatleft">Circuit Design</span></div>
+</div>
+<div class="row">
+<div class="card col3"><span class="floatleft">Mechatronics</span></div>
+<div class="card col3"><span class="floatleft">Microcontrollers</span></div>
+<div class="card col3"><span class="floatleft">Linux</span><i class="fab fa-linux floatright"></i></div>
+</div>
+<div class="row">
+<div class="card col3"><span class="floatleft">Git</span><i class="fab fa-git-alt floatright"></i></div>
+<div class="card col3"><span class="floatleft">AI</span></div>
+<div class="card col3"><span class="floatleft">Statistics</span></div>
+</div>
 
 ## Education
 
