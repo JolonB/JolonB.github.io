@@ -4,7 +4,7 @@ author_profile: true
 
 <style>
 /* This is not a good way of doing this */
-.fa-fw {
+.fa-fw, fab {
     /* set all icons to white-ish */
     color: #eaeaec!important
 }
@@ -12,6 +12,18 @@ author_profile: true
 .sidebar {
     /* set opacity of sidebar to always be 1 */
     opacity: 1!important
+}
+
+h3 {
+    margin: 1em 0 0.5em 0;
+}
+
+p {
+  margin: 0 0 0.5em 0!important;
+}
+
+ul {
+  margin: 0;
 }
 
 /* Float four columns side by side */
@@ -40,6 +52,11 @@ author_profile: true
   }
 }
 
+.col3 {
+  width: 33%;
+  margin: auto;
+}
+
 .card {
 /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
   padding: 16px;
@@ -55,10 +72,6 @@ author_profile: true
     margin: 0 10px 0 0;
     width: 150px;
     border-radius: 5px;
-}
-
-.card h3 {
-    margin: 0 0 0.5em 0;
 }
 
 .card a {
@@ -122,11 +135,43 @@ Fill this in <i class="fas fa-fw fa-hammer"></i>
 
 ## Experience
 
-Under construction <i class="fas fa-fw fa-tools"></i>
+### Embedded Software Developer/Tester
+
+*Aviat Networks, Lower Hutt*  
+*November 18, 2019 - February 21, 2020*
+
+Tasks:
+
+- Writing code for embedded radio system.
+- Manual testing.
+- Writing automated tests.
+- Working in Agile team.
+
+Languages Used:
+
+- C/C++
+- Python
+- Bash
+
+### Junior Design Engineer
+
+*Tait Communications, Christchurch*  
+*November 19, 2018 - February 8, 2019*
+
+Tasks:
+
+- Developing tool with user interface to calculate intermodulation distortion.
+
+Languages Used:
+
+- Java
+- Python
 
 ## Skills
 
 Under construction <i class="fas fa-fw fa-hammer"></i>
+
+<!-- <i class="fab fa-python"></i> -->
 
 ## Education
 
@@ -146,4 +191,4 @@ Silverstream
 
 ## Resume
 
-You can find my resume [here](files/jolonbehrent.pdf). I'll do my best to keep it up to date.
+You can find my resume [here](files/jolonbehrent.pdf). I'll do my best to keep it up to date, though most of the details are the same as on this page.
