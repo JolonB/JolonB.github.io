@@ -4,7 +4,7 @@ author_profile: true
 
 <style>
 /* This is not a good way of doing this */
-.fa-fw, fab {
+.fa-fw, fab, fas {
     /* set all icons to white-ish */
     color: #eaeaec!important
 }
@@ -26,8 +26,12 @@ p {
   margin: 0 0 0.5em 0!important;
 }
 
-ul {
-  margin: 0;
+ul li {
+  margin-bottom: 0;
+}
+
+hr.mid {
+  width: 60%;
 }
 
 
@@ -51,15 +55,25 @@ ul {
 }
 
 /* Float 3 columns side by side */
-.col3 {
+.col2 {
   float: left;
-  width: 30%;
+  width: 45%;
   padding: 0 10px;
-  margin: 10px 1.5% 0 1.5%!important;
+  margin-top: 10px!important;
+  margin-bottom: 0!important;
+}
+
+.leftcol {
+  margin-left: 4%!important;
+  margin-right: 1%!important;
+}
+
+.rightcol {
+  margin-left: 1%!important;
+  margin-right: 4%!important;
 }
 
 .card {
-/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
   padding: 16px;
   margin: 10px 0 0 0;
   background-color: transparent;
@@ -115,14 +129,34 @@ ul {
 Under construction <i class="fas fa-fw fa-hard-hat"></i>
 
 <!-- <div class="card clearfix">
-<h3><a class="un" href="https://github.com/JolonB/">Card Example</a></h3>
+<h3><a class="undline" href="https://github.com/JolonB/">Card Example</a></h3>
 
 <img src="assets/img.png"/>
 
 <p>
-Fill this in.
+Fill this in. <i class="fas fa-fw fa-hammer"></i>
 </p>
 </div> -->
+
+<div class="card clearfix">
+<h3><a class="undline" href="https://github.com/JolonB/SDI12-UART">UART to SDI-12 Conversion</a></h3>
+
+<img src="assets/sdi.png"/>
+
+<p>
+Fill this in. <i class="fas fa-fw fa-hammer"></i>
+</p>
+</div>
+
+<div class="card clearfix">
+<h3><a class="undline" href="https://github.com/JolonB/RabbitGenetics">Rabbit Genetic Simulation</a></h3>
+
+<img src="assets/rabbit.png"/>
+
+<p>
+Fill this in. <i class="fas fa-fw fa-hammer"></i>
+</p>
+</div>
 
 <div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/Latex-Cover-Letter">LaTeX Cover Letter Template</a></h3>
@@ -130,7 +164,10 @@ Fill this in.
 <img src="assets/template.png"/>
 
 <p>
-Fill this in <i class="fas fa-fw fa-hammer"></i>
+For all my previous job applications, I had written my cover letters in Word. Since they were all styled in exactly the same way, I figured I could start making them in LaTeX. All cover letter created from this point will use this template.
+</p>
+<p>
+This template is almost an exact copy of the one I made years ago in Word, except now it comes with custom commands so text can be filled in automatically.
 </p>
 </div>
 
@@ -154,6 +191,8 @@ Languages Used:
 - Python
 - Bash
 
+<hr class="mid">
+
 ### Junior Design Engineer
 
 *Tait Communications, Christchurch*  
@@ -171,24 +210,28 @@ Languages Used:
 ## Skills
 
 <div class="row">
-<div class="card col3"><span class="floatleft">Python</span><i class="fab fa-python floatright"></i></div>
-<div class="card col3"><span class="floatleft">C/C++</span></div>
-<div class="card col3"><span class="floatleft">Java</span><i class="fab fa-java floatright"></i></div>
+  <div class="card col2 leftcol"><span class="floatleft">Python</span><i class="fab fa-python floatright"></i></div>
+  <div class="card col2 rightcol"><span class="floatleft">C/C++</span><i class="fas fa-code floatright"></i></div>
 </div>
 <div class="row">
-<div class="card col3"><span class="floatleft">MATLAB</span></div>
-<div class="card col3"><span class="floatleft">Agile</span></div>
-<div class="card col3"><span class="floatleft">Circuit Design</span></div>
+  <div class="card col2 leftcol"><span class="floatleft">Java</span><i class="fab fa-java floatright"></i></div>
+  <div class="card col2 rightcol"><span class="floatleft">MATLAB</span><!--i class="fas fa-square-root-alt floatright"></i--></div>
 </div>
 <div class="row">
-<div class="card col3"><span class="floatleft">Mechatronics</span></div>
-<div class="card col3"><span class="floatleft">Microcontrollers</span></div>
-<div class="card col3"><span class="floatleft">Linux</span><i class="fab fa-linux floatright"></i></div>
+  <div class="card col2 leftcol"><span class="floatleft">Circuit Design</span></div>
+  <div class="card col2 rightcol"><span class="floatleft">Mechatronics</span></div>
 </div>
 <div class="row">
-<div class="card col3"><span class="floatleft">Git</span><i class="fab fa-git-alt floatright"></i></div>
-<div class="card col3"><span class="floatleft">AI</span></div>
-<div class="card col3"><span class="floatleft">Statistics</span></div>
+  <div class="card col2 leftcol"><span class="floatleft">Microcontroller</span></div>
+  <div class="card col2 rightcol"><span class="floatleft">Linux</span><i class="fab fa-linux floatright"></i></div>
+</div>
+<div class="row">
+  <div class="card col2 leftcol"><span class="floatleft">Git</span><i class="fab fa-git-alt floatright"></i></div>
+  <div class="card col2 rightcol"><span class="floatleft">Agile</span><!--i class="fas fa-project-diagram floatright"></i--></div>
+</div>
+<div class="row">
+  <div class="card col2 leftcol"><span class="floatleft">AI</span><!--i class="fas fa-brain floatright"></i--></div>
+  <div class="card col2 rightcol"><span class="floatleft">Statistics</span><!--i class="fas fa-calculator floatright"></i--></div>
 </div>
 
 ## Education
