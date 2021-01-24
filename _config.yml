@@ -55,7 +55,7 @@ analytics:
 author:
   name             : "Jolon Behrent"
   avatar           : "https://www.github.com/jolonb.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Soon-to-be electronics engineering graduate"
+  bio              : "Electronic engineering graduate who enjoys working with software too"
   location         : "Wellington, NZ"
   links:
     - label: "Email"

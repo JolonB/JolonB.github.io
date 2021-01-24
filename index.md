@@ -3,6 +3,10 @@ author_profile: true
 ---
 
 <style>
+html {
+  font-size: 18px;
+}
+
 /* This is not a good way of doing this */
 .fa-fw, fab, fas {
     /* set all icons to white-ish */
@@ -89,12 +93,12 @@ hr.mid {
     border-radius: 5px;
 }
 
-.card a {
+.card h3 a {
     color: #eaeaea;
     text-decoration: none;
 }
 
-.card a:hover {
+.card h3 a:hover {
     text-decoration: none!important;
 }
 
@@ -126,12 +130,10 @@ hr.mid {
 
 ## Projects
 
-Under construction <i class="fas fa-fw fa-hard-hat"></i>
-
 <!-- <div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/">Card Example</a></h3>
 
-<img src="assets/img.png"/>
+<img src="assets/img/img.png"/>
 
 <p>
 Fill this in. <i class="fas fa-fw fa-hammer"></i>
@@ -139,32 +141,55 @@ Fill this in. <i class="fas fa-fw fa-hammer"></i>
 </div> -->
 
 <div class="card clearfix">
-<h3><a class="undline" href="https://github.com/JolonB/SDI12-UART">UART to SDI-12 Conversion</a></h3>
+<h3><a class="undline" href="assets/pdf/final_report.pdf">IoT Environmental Monitoring - Honours Project</a></h3>
 
-<img src="assets/sdi.png"/>
+<img src=""/>
 
 <p>
-Fill this in. <i class="fas fa-fw fa-hammer"></i>
+My honours project involved working with a partner to develop an Internet of Things environmental monitoring solution for the Greater Wellington Regional Council. I was tasked with developing the hardware and the low-level software.
+</p>
+<p>
+The project was large in scope but came close to being finished by the end of the 8-month time frame. The device was capable of reliably reading data from SDI-12 sensors then saving it to an SD card and sending it to a cloud backend. There's too much to write about in this little box, so if you want to read more about it, you can find the final report <a href="assets/pdf/final_report.pdf">here</a>.
+</p>
+</div>
+
+<div class="card clearfix">
+<h3><a class="undline" href="https://github.com/JolonB/Home-Security">Home Security System</a></h3>
+
+<img src="assets/img/hal_camera.svg"/>
+
+<p>
+I've set up a security system before but found that it was finicky and was missing a lot of important features. The better security systems are more expensive and often involve a third-party. This project is an end-to-end IoT home security system that can send text/email notifications to approved users and allow them to view footage captured by WiFi-connected nodes throughout their house. Each node is a custom-made device built on an ESP32 with the ability to be powered by battery and from mains. This is currently a work in progress.
+</p>
+</div>
+
+<div class="card clearfix">
+<h3><a class="undline" href="https://github.com/JolonB/SDI12-UART">UART to SDI-12 Conversion</a></h3>
+
+<img src="assets/img/sdi.png"/>
+
+<p>
+SDI-12 is a wired communication protocol used for low-powered, environmental sensors. Unfortunately, I was unable to find any open-source hardware implementation of this protocol, so needed to create something myself. The circuit I designed allows for conversion between UART and SDI-12, which allows almost any microcontroller to communicate with an SDI-12 sensor (with the proper software implementation).
 </p>
 </div>
 
 <div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/RabbitGenetics">Rabbit Genetic Simulation</a></h3>
 
-<img src="assets/rabbit.png"/>
+<img src="assets/img/rabbit.png"/>
 
 <p>
-Fill this in. <i class="fas fa-fw fa-hammer"></i>
+I saw <a href="https://www.youtube.com/watch?v=r_It_X7v-1E">this video</a> a few years ago and it inspired me to create something just like it. I didn't want to refer to the video while I was designing this, so whatever I've done (good or bad) was purely my decision. This project is built using Java and Gradle. Unfortunately, it was never finished and maybe never will be.
 </p>
 </div>
 
 <div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/Latex-Cover-Letter">LaTeX Cover Letter Template</a></h3>
 
-<img src="assets/template.png"/>
+<img src="assets/img/template.png"/>
 
 <p>
-For all my previous job applications, I had written my cover letters in Word. Since they were all styled in exactly the same way, I figured I could start making them in LaTeX. All cover letter created from this point will use this template.
+For all my previous job applications, I had written my cover letters in Word. Since they were all styled in exactly the same way, I figured I could start making them in LaTeX instead.
 </p>
 <p>
 This template is almost an exact copy of the one I made years ago in Word, except now it comes with custom commands so text can be filled in automatically.
@@ -172,6 +197,21 @@ This template is almost an exact copy of the one I made years ago in Word, excep
 </div>
 
 ## Experience
+### Summer Research Assistant
+
+*Robinson Research Institute, Lower Hutt*  
+*November 2, 2020 - March 5, 2021*
+
+Tasks:
+
+- Designing electronic circuit for thruster
+- Collecting data
+
+Languages Used:
+
+- MATLAB
+
+<hr class="mid">
 
 ### Embedded Software Developer/Tester
 
@@ -222,7 +262,7 @@ Languages Used:
   <div class="card col2 rightcol"><span class="floatleft">Mechatronics</span></div>
 </div>
 <div class="row">
-  <div class="card col2 leftcol"><span class="floatleft">Microcontroller</span></div>
+  <div class="card col2 leftcol"><span class="floatleft">Microcontrollers</span></div>
   <div class="card col2 rightcol"><span class="floatleft">Linux</span><i class="fab fa-linux floatright"></i></div>
 </div>
 <div class="row">
@@ -239,10 +279,10 @@ Languages Used:
 ### University
 
 *Victoria University of Wellington*  
-Bachelor of Engineering (Hons)  
+Bachelor of Engineering with First Class Honours  
 Electronic and Computer Systems Engineering  
-2017 - present  
-Average grade: A
+2017 - 2020  
+Average grade: A+
 
 ### College
 
@@ -252,4 +292,4 @@ Silverstream
 
 ## Resume
 
-You can find my resume [here](files/jolonbehrent.pdf). I'll do my best to keep it up to date, though most of the details are the same as on this page.
+You can find my resume [here](assets/pdf/JolonBehrent_CV.pdf). I'll do my best to keep it up to date, though most of the details are the same as on this page.
