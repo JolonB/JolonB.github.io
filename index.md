@@ -159,7 +159,7 @@ The project was large in scope but came close to being finished by the end of th
 <img src="assets/img/hal_camera.svg"/>
 
 <p>
-I've set up a security system before but found that it was finicky and was missing a lot of important features. The better security systems are more expensive and often involve a third-party. This project is an end-to-end IoT home security system that can send text/email notifications to approved users and allow them to view footage captured by WiFi-connected nodes throughout their house. Each node is a custom-made device built on an ESP32 with the ability to be powered by battery and from mains. This is currently a work in progress.
+I've set up a security system before but found that it was finicky and was missing a lot of important features. The better security systems are more expensive and often involve a third-party. This open-source project is for an end-to-end IoT home security system that can send text/email notifications to approved users and allow them to view footage captured by WiFi-connected nodes throughout their house. Each node is a custom-made device built on an ESP32 with the ability to be powered by battery and from mains. This is currently a work in progress.
 </p>
 </div>
 
@@ -169,7 +169,7 @@ I've set up a security system before but found that it was finicky and was missi
 <img src="assets/img/sdi.png"/>
 
 <p>
-SDI-12 is a wired communication protocol used for low-powered, environmental sensors. Unfortunately, I was unable to find any open-source hardware implementation of this protocol, so needed to create something myself. The circuit I designed allows for conversion between UART and SDI-12, which allows almost any microcontroller to communicate with an SDI-12 sensor (with the proper software implementation).
+SDI-12 is a wired communication protocol used for low-powered, environmental sensors. Unfortunately, I was unable to find any open-source hardware implementation of this protocol, so I needed to create something myself. The circuit I designed allows for conversion between UART and SDI-12, which means almost any microcontroller can communicate with an SDI-12 sensor (with the proper software implementation).
 </p>
 </div>
 
@@ -179,7 +179,7 @@ SDI-12 is a wired communication protocol used for low-powered, environmental sen
 <img src="assets/img/rabbit.png"/>
 
 <p>
-I saw <a href="https://www.youtube.com/watch?v=r_It_X7v-1E">this video</a> a few years ago and it inspired me to create something just like it. I didn't want to refer to the video while I was designing this, so whatever I've done (good or bad) was purely my decision. This project is built using Java and Gradle. Unfortunately, it was never finished and maybe never will be.
+I saw <a href="https://www.youtube.com/watch?v=r_It_X7v-1E">this video</a> a few years ago and it inspired me to create something just like it. In short, it a rabbit simulations which allows them to produce offspring that have traits of the parents. I didn't want to refer to the video while I was designing this, so whatever I've done (good or bad) was purely my decision. This project is built using Java and Gradle. Unfortunately, it was never finished and maybe never will be.
 </p>
 </div>
 
@@ -189,10 +189,7 @@ I saw <a href="https://www.youtube.com/watch?v=r_It_X7v-1E">this video</a> a few
 <img src="assets/img/template.png"/>
 
 <p>
-For all my previous job applications, I had written my cover letters in Word. Since they were all styled in exactly the same way, I figured I could start making them in LaTeX instead.
-</p>
-<p>
-This template is almost an exact copy of the one I made years ago in Word, except now it comes with custom commands so text can be filled in automatically.
+For all my previous job applications, I had written my cover letters in Word. Since they were all styled in exactly the same way, I figured I could start making them in LaTeX instead. This template is almost an exact copy of the one I made years ago in Word, except now it comes with custom commands so text can be filled in automatically.
 </p>
 </div>
 
@@ -204,8 +201,8 @@ This template is almost an exact copy of the one I made years ago in Word, excep
 
 Tasks:
 
-- Designing electronic circuit for thruster
-- Collecting data
+- Designing electronic circuit for thruster.
+- Collecting data.
 
 Languages Used:
 
