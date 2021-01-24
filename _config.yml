@@ -104,9 +104,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
-    - label: "Courses"
-      icon: "fas fa-fw fa-link"
-      url: "/courses"
+    # - label: "Courses"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "/courses"
 
 
 # Reading Files
