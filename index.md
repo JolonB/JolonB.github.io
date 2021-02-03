@@ -146,7 +146,7 @@ Fill this in. <i class="fas fa-fw fa-hammer"></i>
 <img src=""/>
 
 <p>
-My honours project involved working with a partner to develop an Internet of Things environmental monitoring solution for the Greater Wellington Regional Council. I was tasked with developing the hardware and the low-level software.
+My honours project involved working with <a href="https://benjamin.secker.nz/">Benjamin Secker</a> to develop an Internet of Things environmental monitoring solution for the Greater Wellington Regional Council. I was tasked with developing the hardware and the low-level software.
 </p>
 <p>
 The project was large in scope but came close to being finished by the end of the 8-month time frame. The device was capable of reliably reading data from SDI-12 sensors then saving it to an SD card and sending it to a cloud backend. There's too much to write about in this little box, so if you want to read more about it, you can find the final report <a href="assets/pdf/final_report.pdf">here</a>.
