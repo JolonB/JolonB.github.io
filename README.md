@@ -1,5 +1,7 @@
 # JolonB.github.io
 
+This repo contains the files for my profile/portfolio thing that can be accessed at [jolonb.github.io](https://jolonb.github.io/).
+
 ## Modifying the page
 
 If you want to run this page locally (not sure why you would), you can simply clone this repo, install a bunch of stuff.
