@@ -83,7 +83,6 @@ hr.mid {
   background-color: transparent;
   border: 2px solid #51555d;
   border-radius: 5px;
-
 }
 
 .card img {
@@ -91,6 +90,11 @@ hr.mid {
     margin: 0 10px 0 0;
     width: 150px;
     border-radius: 5px;
+}
+
+.card p {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .card h3 a {
@@ -154,12 +158,32 @@ The project was large in scope but came close to being finished by the end of th
 </div>
 
 <div class="card clearfix">
+<h3><a class="undline" href="https://github.com/JolonB/PrintCameraBot">3D Printer Monitor</a></h3>
+
+<!-- <img src="assets/img/img.png"/> -->
+
+<p>
+Not long after getting a 3D printer, I ran a 6 hour print. It was going well to begin with, but as Murphy's law would have it: when I left house, it failed. Unfortunately, I was gone for a while, so a decent amount of filament was wasted. I vowed to never let that happen again, so I developed a simple email service that can run off a Raspberry Pi which takes a photo of the printer with a webcam when requested. I know things like this already exist (there are even baby monitors that can be accessed from anywhere), but I wanted something that could be implement without needing to use anything I didn't already own.
+</p>
+</div>
+
+<div class="card clearfix">
+<h3><a class="undline" href="https://github.com/JolonB/Secret-Santa">Secret Santa</a></h3>
+
+<img src="assets/img/santa.jpg"/>
+
+<p>
+Fill this in. <i class="fas fa-fw fa-hammer"></i>
+</p>
+</div>
+
+<div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/Home-Security">Home Security System</a></h3>
 
 <img src="assets/img/hal_camera.svg"/>
 
 <p>
-I've set up a security system before but found that it was finicky and was missing a lot of important features. The better security systems are more expensive and often involve a third-party. This open-source project is for an end-to-end IoT home security system that can send text/email notifications to approved users and allow them to view footage captured by WiFi-connected nodes throughout their house. Each node is a custom-made device built on an ESP32 with the ability to be powered by battery and from mains. This is currently a work in progress.
+I've set up a security system for a family member in the past but found that it was finicky and was missing a lot of important features. The better security systems are more expensive and often involve a third-party. This open-source project is for an end-to-end IoT home security system that can send text/email notifications to approved users and allow them to view footage captured by WiFi-connected nodes throughout their house. Each node is a custom-made device built on an ESP32 with the ability to be powered by battery and from mains. This is currently a work in progress.
 </p>
 </div>
 
@@ -174,16 +198,6 @@ SDI-12 is a wired communication protocol used for low-powered, environmental sen
 </div>
 
 <div class="card clearfix">
-<h3><a class="undline" href="https://github.com/JolonB/RabbitGenetics">Rabbit Genetic Simulation</a></h3>
-
-<img src="assets/img/rabbit.png"/>
-
-<p>
-I saw <a href="https://www.youtube.com/watch?v=r_It_X7v-1E">this video</a> a few years ago and it inspired me to create something just like it. In short, it a rabbit simulations which allows them to produce offspring that have traits of the parents. I didn't want to refer to the video while I was designing this, so whatever I've done (good or bad) was purely my decision. This project is built using Java and Gradle. Unfortunately, it was never finished and maybe never will be.
-</p>
-</div>
-
-<div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/Latex-Cover-Letter">LaTeX Cover Letter Template</a></h3>
 
 <img src="assets/img/template.png"/>
@@ -193,20 +207,50 @@ For all my previous job applications, I had written my cover letters in Word. Si
 </p>
 </div>
 
-## Experience
-### Summer Research Assistant
+<div class="card clearfix">
+<h3><a class="undline" href="https://github.com/JolonB/RabbitGenetics">Rabbit Genetic Simulation</a></h3>
 
-*Robinson Research Institute, Lower Hutt*  
-*November 2, 2020 - March 5, 2021*
+<img src="assets/img/rabbit.png"/>
+
+<p>
+I saw <a href="https://www.youtube.com/watch?v=r_It_X7v-1E">this video</a> a few years ago and it inspired me to create something just like it. In short, it a rabbit simulations which allows them to produce offspring that have traits of the parents. I didn't want to use the video as a reference while I was designing this, so whatever I've done (good or bad) was purely my decision. This project is built using Java and Gradle. Unfortunately, it was never finished and maybe never will be.
+</p>
+</div>
+
+## Experience
+
+### Robotic Software Developer
+
+*Clutterbot, Lower Hutt*  
+*March 29, 2021 - present*
 
 Tasks:
 
-- Designing electronic circuit for thruster.
+- Developing behaviour and navigation for a household robot using ROS.
+
+Languages Used:
+
+- Python
+- C++
+- Bash
+
+<hr class="mid">
+
+### Summer Research Assistant
+
+*Robinson Research Institute, Lower Hutt*  
+*November 2, 2020 - March 26, 2021*
+
+Tasks:
+
+- Designing electronic circuit for testing a thruster.
+- Designing a high-voltage, high-current switching mechanism for an energy storage solution.
 - Collecting data.
 
 Languages Used:
 
 - MATLAB
+- LabVIEW
 
 <hr class="mid">
 
@@ -224,7 +268,8 @@ Tasks:
 
 Languages Used:
 
-- C/C++
+- C
+- C++
 - Python
 - Bash
 
