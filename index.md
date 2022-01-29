@@ -173,7 +173,10 @@ Not long after getting a 3D printer, I ran a 6 hour print. It was going well to 
 <img src="assets/img/santa.jpg"/>
 
 <p>
-Fill this in. <i class="fas fa-fw fa-hammer"></i>
+Every Christmas, starting in 2020, my family has played secret santa rather than having buying a gift for everyone. I'm personally not a fan of how secret santa works, as it is entirely possible that you will draw your own name, which could mean that everyone needs to draw a new name. You also can't factor in special rules, such as not allowing two people to give gifts to each other. This project treats the people as nodes on a graph, finds every possible Hamiltonian cycle between them, and picks one cycle at random. It then sends an email to each player telling them who they are buying a gift for.
+</p>
+<p>
+I updated the program in 2021 to allow someone to be removed from the game after the allocations had been made. This is done by storing base64 encoded player allocations which can be read by a script and will send an email to the whomever has to give a gift to a different person.
 </p>
 </div>
 
@@ -334,4 +337,4 @@ Silverstream
 
 ## Resume
 
-You can find my resume [here](assets/pdf/JolonBehrent_CV.pdf). I'll do my best to keep it up to date, though most of the details are the same as on this page.
+I'm more than happy to share my CV with people. Just flick me an email at [jolon.behrent@gmail.com](mailto:jolon.behrent@gmail.com?subject=CV Request&body=Hi Jolon,%0D%0A%0D%0AI'm emailing to request a copy of your CV.%0D%0A%0D%0AThanks) and I'll try to respond as soon as I can. There's no guarantee that all of the information will be up-to-date as it may have been some time since I last updated it.
