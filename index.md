@@ -147,13 +147,44 @@ Fill this in. <i class="fas fa-fw fa-hammer"></i>
 <div class="card clearfix">
 <h3><a class="undline" href="assets/pdf/final_report.pdf">IoT Environmental Monitoring - Honours Project</a></h3>
 
-<img src=""/>
+<!-- <img src=""/> -->
 
 <p>
 My honours project involved working with <a href="https://benjamin.secker.nz/">Benjamin Secker</a> to develop an Internet of Things environmental monitoring solution for the Greater Wellington Regional Council. I was tasked with developing the hardware and the low-level software.
 </p>
 <p>
 The project was large in scope but came close to being finished by the end of the 8-month time frame. The device was capable of reliably reading data from SDI-12 sensors then saving it to an SD card and sending it to a cloud backend. There's too much to write about in this little box, so if you want to read more about it, you can find the final report <a href="assets/pdf/final_report.pdf">here</a>.
+</p>
+<p>
+This project was continued part-time after I had graduated.
+This involved making various upgrades to the electronics, including adding a USB-C port, interfacing for a new modem, and updating the rainfall monitoring system.
+</p>
+</div>
+
+<div class="card clearfix">
+<h3><a class="undline" href="https://github.com/JolonB/Pico-Steno">Raspberry Pi Pico-based Stenography Keyboard</a></h3>
+
+<img src="assets/img/keyboard.jpg"/>
+
+<p>
+Sometimes I see something that I think is cool and really want to try it out.
+Most recently, this was stenography.
+Unfortunately, proper stenography gear is expensive, and even the open-source ones cost upwards of $100.
+I wanted to develop my own stenography keyboard using a Rasbperry Pi Pico.
+The keyboard software and hardware was all developed and designed by me.
+It has been made to be compatible with <a href="https://github.com/openstenoproject/plover">Plover</a>.
+This is the first project that I have printed a PCB for, but it won't be the last.
+</p>
+</div>
+
+<div class="card clearfix">
+<h3><a class="undline" href="https://github.com/JolonB/XmasTree">3D Christmas Tree Light Animations</a></h3>
+
+<img src=""/>
+
+<p>
+Inspired by <a href="https://www.youtube.com/watch?v=TvlpIojusBE">Matt Parker's Christmas tree project</a> and the <a href="https://github.com/GSD6338/XmasTree">subsequent work done by Harvard students</a>, I decided to make my own animated Christmas tree system, but with improvements to four main areas: 1) move from Raspberry Pi to ESP32 to dramatically reduce the cost, 2) add ability to convert an mp4 video to an animation for the tree, 3) reduce the animation file size by creating a custom, lightly-compressed format, and 4) creating a user interface for configuring the tree and controlling animations.
+This project is still a work in progress, which I hope to have done in time for Christmas.
 </p>
 </div>
 
@@ -176,7 +207,14 @@ Not long after getting a 3D printer, I ran a 6 hour print. It was going well to 
 Every Christmas, starting in 2020, my family has played secret santa rather than having buying a gift for everyone. I'm personally not a fan of how secret santa works, as it is entirely possible that you will draw your own name, which could mean that everyone needs to draw a new name. You also can't factor in special rules, such as not allowing two people to give gifts to each other. This project treats the people as nodes on a graph, finds every possible Hamiltonian cycle between them, and picks one cycle at random. It then sends an email to each player telling them who they are buying a gift for.
 </p>
 <p>
-I updated the program in 2021 to allow someone to be removed from the game after the allocations had been made. This is done by storing base64 encoded player allocations which can be read by a script and will send an email to the whomever has to give a gift to a different person.
+I updated the program in 2021 to allow someone to be removed from the game after the allocations had been made. This is done by storing base64 encoded player allocations which can be read by a script and will send an email to whomever has to give a gift to a different person.
+</p>
+<p>
+I further updated the program in 2022 in response to slow calculation times with "large" groups of people (8 people takes about 20 minutes to calculate).
+I initially tried multithreading, but didn't get good results from that.
+Instead, I developed a function that finds a valid, random Hamiltonian cycle with a best-case complexity of Θ(n).
+The algorithm doesn't always find a valid combination (for sparse graphs), so has to retry a few times until it does.
+The new algorithm can solve graphs with 1000 people in a matter of seconds.
 </p>
 </div>
 
@@ -187,6 +225,18 @@ I updated the program in 2021 to allow someone to be removed from the game after
 
 <p>
 I've set up a security system for a family member in the past but found that it was finicky and was missing a lot of important features. The better security systems are more expensive and often involve a third-party. This open-source project is for an end-to-end IoT home security system that can send text/email notifications to approved users and allow them to view footage captured by WiFi-connected nodes throughout their house. Each node is a custom-made device built on an ESP32 with the ability to be powered by battery and from mains. This is currently a work in progress.
+</p>
+</div>
+
+<div class="card clearfix">
+<h3><a class="undline" href="https://github.com/JolonB/Car-Security">Vehicle Tracking System</a></h3>
+
+<img src=""/>
+
+<p>
+After my friend had his car stolen and dumped in another city, I was inspired to develop an affordable car monitoring and tracking system.
+This project is currently a work in progress, but will involve a Raspberry Pi Pico connected to the <a href="https://www.hologram.io/">Hologram</a> network.
+When the system is powered on, it will send information to a private MQTT broker about the location of the car.
 </p>
 </div>
 
