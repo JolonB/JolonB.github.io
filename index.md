@@ -272,6 +272,29 @@ I saw <a href="https://www.youtube.com/watch?v=r_It_X7v-1E">this video</a> a few
 
 ## Experience
 
+### Electronics & Embedded Engineer
+
+*DTS, Remote / MilktechNZ, Remote*  
+*31 July, 2023 – 31 October, 2024 / 1 November, 2024 – present*
+
+Tasks:
+
+- 
+
+Languages Used:
+
+- C
+- C++
+- Python
+- Bash
+
+Tools Used:
+
+- Altium
+- Kicad
+
+<hr class="mid">
+
 ### Robotic Software Developer
 
 *Clutterbot, Lower Hutt*  
