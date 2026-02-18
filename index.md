@@ -145,6 +145,18 @@ Fill this in. <i class="fas fa-fw fa-hammer"></i>
 </div> -->
 
 <div class="card clearfix">
+<h3><a class="undline" href="https://github.com/JolonB/">Electronic Scrabble</a></h3>
+
+<img src="assets/img/scrabble.jpg"/>
+
+<p>
+Fill this in. <i class="fas fa-fw fa-hammer"></i>
+</p>
+</div>
+
+<!--  -->
+
+<div class="card clearfix">
 <h3><a class="undline" href="assets/pdf/final_report.pdf">IoT Environmental Monitoring - Honours Project</a></h3>
 
 <!-- <img src=""/> -->
@@ -161,6 +173,8 @@ This involved making various upgrades to the electronics, including adding a USB
 </p>
 </div>
 
+<!--  -->
+
 <div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/Pico-Steno">Raspberry Pi Pico-based Stenography Keyboard</a></h3>
 
@@ -176,6 +190,8 @@ It has been made to be compatible with <a href="https://github.com/openstenoproj
 This is the first project that I have printed a PCB for, but it won't be the last.
 </p>
 </div>
+
+<!--  -->
 
 <div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/XmasTree">3D Christmas Tree Light Animations</a></h3>
@@ -198,6 +214,8 @@ Not long after getting a 3D printer, I ran a 6 hour print. It was going well to 
 </p>
 </div>
 
+<!--  -->
+
 <div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/Secret-Santa">Secret Santa</a></h3>
 
@@ -218,6 +236,8 @@ The new algorithm can solve graphs with 1000 people in a matter of seconds.
 </p>
 </div>
 
+<!--  -->
+
 <div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/Home-Security">Home Security System</a></h3>
 
@@ -227,6 +247,8 @@ The new algorithm can solve graphs with 1000 people in a matter of seconds.
 I've set up a security system for a family member in the past but found that it was finicky and was missing a lot of important features. The better security systems are more expensive and often involve a third-party. This open-source project is for an end-to-end IoT home security system that can send text/email notifications to approved users and allow them to view footage captured by WiFi-connected nodes throughout their house. Each node is a custom-made device built on an ESP32 with the ability to be powered by battery and from mains. This is currently a work in progress.
 </p>
 </div>
+
+<!--  -->
 
 <div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/Car-Security">Vehicle Tracking System</a></h3>
@@ -240,6 +262,8 @@ When the system is powered on, it will send information to a private MQTT broker
 </p>
 </div>
 
+<!--  -->
+
 <div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/SDI12-UART">UART to SDI-12 Conversion</a></h3>
 
@@ -250,6 +274,8 @@ SDI-12 is a wired communication protocol used for low-powered, environmental sen
 </p>
 </div>
 
+<!--  -->
+
 <div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/Latex-Cover-Letter">LaTeX Cover Letter Template</a></h3>
 
@@ -259,6 +285,8 @@ SDI-12 is a wired communication protocol used for low-powered, environmental sen
 For all my previous job applications, I had written my cover letters in Word. Since they were all styled in exactly the same way, I figured I could start making them in LaTeX instead. This template is almost an exact copy of the one I made years ago in Word, except now it comes with custom commands so text can be filled in automatically.
 </p>
 </div>
+
+<!--  -->
 
 <div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/RabbitGenetics">Rabbit Genetic Simulation</a></h3>
