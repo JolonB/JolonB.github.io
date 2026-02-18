@@ -275,7 +275,7 @@ I saw <a href="https://www.youtube.com/watch?v=r_It_X7v-1E">this video</a> a few
 ### Robotic Software Developer
 
 *Clutterbot, Lower Hutt*  
-*March 29, 2021 - present*
+*29 March, 2021 – 28 July, 2023*
 
 Tasks:
 
@@ -292,7 +292,7 @@ Languages Used:
 ### Summer Research Assistant
 
 *Robinson Research Institute, Lower Hutt*  
-*November 2, 2020 - March 26, 2021*
+*2 November, 2020 – 26 March, 2021*
 
 Tasks:
 
@@ -310,7 +310,7 @@ Languages Used:
 ### Embedded Software Developer/Tester
 
 *Aviat Networks, Lower Hutt*  
-*November 18, 2019 - February 21, 2020*
+*18 November, 2019 – 21 February, 2020*
 
 Tasks:
 
@@ -331,7 +331,7 @@ Languages Used:
 ### Junior Design Engineer
 
 *Tait Communications, Christchurch*  
-*November 19, 2018 - February 8, 2019*
+*19 November, 2018 – 8 February, 2019*
 
 Tasks:
 
