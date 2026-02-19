@@ -145,24 +145,6 @@ Fill this in. <i class="fas fa-fw fa-hammer"></i>
 </div> -->
 
 <div class="card clearfix">
-<h3><a class="undline" href="https://github.com/JolonB?tab=repositories&q=word+game">Electronic Scrabble</a></h3>
-
-<img src="assets/img/scrabble.jpg"/>
-
-<p>
-Don't you wish your Scrabble board could keep score for you, and show cool backlight animations when you spell words?
-This project uses nine 5x5 boards to create a 15x15 square Scrabble board with individually controllable LEDs in each square.
-Each tile can be sensed to uniquely determine the letter present on it, and points for valid words are automatically calculated (including bonus score squares).
-</p>
-<p>
-The game is still in the prototype stage, but is slowly being worked on.
-I've currently had a few PCBs printed and I'm working on the software for them.
-</p>
-</div>
-
-<!--  -->
-
-<div class="card clearfix">
 <h3><a class="undline" href="assets/pdf/final_report.pdf">IoT Environmental Monitoring - Honours Project</a></h3>
 
 <!-- <img src=""/> -->
@@ -176,6 +158,24 @@ The project was large in scope but came close to being finished by the end of th
 <p>
 This project was continued part-time after I had graduated.
 This involved making various upgrades to the electronics, including adding a USB-C port, interfacing for a new modem, and updating the rainfall monitoring system.
+</p>
+</div>
+
+<!--  -->
+
+<div class="card clearfix">
+<h3><a class="undline" href="https://github.com/JolonB?tab=repositories&q=word+game">Electronic Scrabble</a></h3>
+
+<img src="assets/img/scrabble.jpg"/>
+
+<p>
+Don't you wish your Scrabble board could keep score for you, and show cool backlight animations when you spell words?
+This project uses nine 5x5 boards to create a 15x15 square Scrabble board with individually controllable LEDs in each square.
+Each tile can be sensed to uniquely determine the letter present on it, and points for valid words are automatically calculated (including bonus score squares).
+</p>
+<p>
+The game is still in the prototype stage, but is slowly being worked on.
+I've currently had a few PCBs printed and I'm working on the software for them.
 </p>
 </div>
 
