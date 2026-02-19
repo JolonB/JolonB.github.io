@@ -313,7 +313,12 @@ I saw <a href="https://www.youtube.com/watch?v=r_It_X7v-1E">this video</a> a few
 
 Tasks:
 
-- 
+- Electronic circuit design using Kicad or Altium.
+- Firmware development for PIC, ESP32, and STM32 microcontrollers.
+- Upgrading existing devices to use new Bluetooth LE hardware, including improving the range using Coded PHY.
+- Creating tools in C++ and Python to allow users to easily calibrate their equipment.
+- Developing internal tools in Python and C#.
+- Updating and sometimes reverse engineering existing electronic designs.
 
 Languages Used:
 
