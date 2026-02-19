@@ -416,19 +416,19 @@ Languages Used:
 </div>
 <div class="row">
   <div class="card col2 leftcol"><span class="floatleft">Circuit Design</span></div>
-  <div class="card col2 rightcol"><span class="floatleft">Mechatronics</span></div>
-</div>
-<div class="row">
-  <div class="card col2 leftcol"><span class="floatleft">Microcontrollers</span></div>
-  <div class="card col2 rightcol"><span class="floatleft">Linux</span><i class="fab fa-linux floatright"></i></div>
+  <div class="card col2 rightcol"><span class="floatleft">Microcontrollers</span></div>
 </div>
 <div class="row">
   <div class="card col2 leftcol"><span class="floatleft">Git</span><i class="fab fa-git-alt floatright"></i></div>
-  <div class="card col2 rightcol"><span class="floatleft">Agile</span><!--i class="fas fa-project-diagram floatright"></i--></div>
+  <div class="card col2 rightcol"><span class="floatleft">Linux</span><i class="fab fa-linux floatright"></i></div>
 </div>
 <div class="row">
-  <div class="card col2 leftcol"><span class="floatleft">AI</span><!--i class="fas fa-brain floatright"></i--></div>
-  <div class="card col2 rightcol"><span class="floatleft">Statistics</span><!--i class="fas fa-calculator floatright"></i--></div>
+  <div class="card col2 leftcol"><span class="floatleft">C#</span><!--i class="fas fa-project-diagram floatright"></i--></div>
+  <div class="card col2 rightcol"><span class="floatleft">Bash</span></div>
+</div>
+<div class="row">
+  <div class="card col2 leftcol"><span class="floatleft">Altium</span><!--i class="fas fa-brain floatright"></i--></div>
+  <div class="card col2 rightcol"><span class="floatleft">Kicad</span><!--i class="fas fa-calculator floatright"></i--></div>
 </div>
 
 ## Education
