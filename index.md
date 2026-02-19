@@ -145,6 +145,24 @@ Fill this in. <i class="fas fa-fw fa-hammer"></i>
 </div> -->
 
 <div class="card clearfix">
+<h3><a class="undline" href="https://github.com/JolonB?tab=repositories&q=word+game">Electronic Scrabble</a></h3>
+
+<img src="assets/img/scrabble.jpg"/>
+
+<p>
+Don't you wish your Scrabble board could keep score for you, and show cool backlight animations when you spell words?
+This project uses nine 5x5 boards to create a 15x15 square Scrabble board with individually controllable LEDs in each square.
+Each tile can be sensed to uniquely determine the letter present on it, and points for valid words are automatically calculated (including bonus score squares).
+</p>
+<p>
+The game is still in the prototype stage, but is slowly being worked on.
+I've currently had a few PCBs printed and I'm working on the software for them.
+</p>
+</div>
+
+<!--  -->
+
+<div class="card clearfix">
 <h3><a class="undline" href="assets/pdf/final_report.pdf">IoT Environmental Monitoring - Honours Project</a></h3>
 
 <!-- <img src=""/> -->
@@ -161,6 +179,8 @@ This involved making various upgrades to the electronics, including adding a USB
 </p>
 </div>
 
+<!--  -->
+
 <div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/Pico-Steno">Raspberry Pi Pico-based Stenography Keyboard</a></h3>
 
@@ -176,6 +196,8 @@ It has been made to be compatible with <a href="https://github.com/openstenoproj
 This is the first project that I have printed a PCB for, but it won't be the last.
 </p>
 </div>
+
+<!--  -->
 
 <div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/XmasTree">3D Christmas Tree Light Animations</a></h3>
@@ -198,6 +220,8 @@ Not long after getting a 3D printer, I ran a 6 hour print. It was going well to 
 </p>
 </div>
 
+<!--  -->
+
 <div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/Secret-Santa">Secret Santa</a></h3>
 
@@ -218,6 +242,8 @@ The new algorithm can solve graphs with 1000 people in a matter of seconds.
 </p>
 </div>
 
+<!--  -->
+
 <div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/Home-Security">Home Security System</a></h3>
 
@@ -227,6 +253,8 @@ The new algorithm can solve graphs with 1000 people in a matter of seconds.
 I've set up a security system for a family member in the past but found that it was finicky and was missing a lot of important features. The better security systems are more expensive and often involve a third-party. This open-source project is for an end-to-end IoT home security system that can send text/email notifications to approved users and allow them to view footage captured by WiFi-connected nodes throughout their house. Each node is a custom-made device built on an ESP32 with the ability to be powered by battery and from mains. This is currently a work in progress.
 </p>
 </div>
+
+<!--  -->
 
 <div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/Car-Security">Vehicle Tracking System</a></h3>
@@ -240,6 +268,8 @@ When the system is powered on, it will send information to a private MQTT broker
 </p>
 </div>
 
+<!--  -->
+
 <div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/SDI12-UART">UART to SDI-12 Conversion</a></h3>
 
@@ -250,6 +280,8 @@ SDI-12 is a wired communication protocol used for low-powered, environmental sen
 </p>
 </div>
 
+<!--  -->
+
 <div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/Latex-Cover-Letter">LaTeX Cover Letter Template</a></h3>
 
@@ -259,6 +291,8 @@ SDI-12 is a wired communication protocol used for low-powered, environmental sen
 For all my previous job applications, I had written my cover letters in Word. Since they were all styled in exactly the same way, I figured I could start making them in LaTeX instead. This template is almost an exact copy of the one I made years ago in Word, except now it comes with custom commands so text can be filled in automatically.
 </p>
 </div>
+
+<!--  -->
 
 <div class="card clearfix">
 <h3><a class="undline" href="https://github.com/JolonB/RabbitGenetics">Rabbit Genetic Simulation</a></h3>
@@ -271,6 +305,34 @@ I saw <a href="https://www.youtube.com/watch?v=r_It_X7v-1E">this video</a> a few
 </div>
 
 ## Experience
+
+### Electronics & Embedded Engineer
+
+*DTS, Remote / MilktechNZ, Remote*  
+*31 July, 2023 – 31 October, 2024 / 1 November, 2024 – present*
+
+Tasks:
+
+- Electronic circuit design using Kicad or Altium.
+- Firmware development for PIC, ESP32, and STM32 microcontrollers.
+- Upgrading existing devices to use new Bluetooth LE hardware, including improving the range using Coded PHY.
+- Creating tools in C++ and Python to allow users to easily calibrate their equipment.
+- Developing internal tools in Python and C#.
+- Updating and sometimes reverse engineering existing electronic designs.
+
+Languages Used:
+
+- C
+- C++
+- Python
+- Bash
+
+Tools Used:
+
+- Altium
+- Kicad
+
+<hr class="mid">
 
 ### Robotic Software Developer
 
